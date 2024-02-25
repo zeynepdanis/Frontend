@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+
+    <h1>HTML Images</h1>
+    <h2>HTML Images Syntax</h2>
+    <p>The HTML <img> tag is used to embed an image in a web page. Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.</p>
+    <h2>Images on Another Server/Website</h2>
+    <p>To use an image from another server, you will need to save the image to your computer and upload it to your own server. You can also use an image on the web. You will need the full URL to the image, which includes the domain name.</p>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+    <h2>HTML Image Maps</h2>
+    <p>An image map allows you to link different parts of the image to different URLs. Use the <map> tag to define an image map. Use the <area> tag to define the clickable areas in the image map.</p>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+
+
+    <h2>The HTML <picture> Element</h2>
+        
+        <p>The HTML <picture> element gives web developers more flexibility in specifying image resources.
+
+            The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+            
+            Each <source> element has a media attribute that defines when the image is the most suitable.</p>
+
+         <p>Example
+            Show different images for different screen sizes:
+            
+            <picture>
+              <source media="(min-width: 650px)" srcset="https://images.app.goo.gl/SZULP9jSeyrXrU8v6">
+              <source media="(min-width: 465px)" srcset="https://images.app.goo.gl/SZULP9jSeyrXrU8v6">
+              <img src="https://images.app.goo.gl/SZULP9jSeyrXrU8v6">
+            </picture></p>   
+
+</body>
+</html>
